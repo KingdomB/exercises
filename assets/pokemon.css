@@ -1,0 +1,13 @@
+table {
+  border: 1px solid;
+}
+table th,
+table td {
+  border: 1px solid;
+}
+
+colgroup {
+  background-color: grey;
+}
+
+/*# sourceMappingURL=pokemon.css.map */

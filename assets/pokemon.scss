@@ -1,0 +1,13 @@
+$boder1: 1px solid;
+
+table {
+    border: $boder1;
+    th,
+    td {
+     border: $boder1;   
+    }
+}
+
+colgroup {
+    background-color: grey;
+}
