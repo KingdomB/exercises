@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 </head>
-<body>
-<h2>Register</h2>
 
-<form action="">
-    <div>
-    <label for="firstname">Frist Name:</label>
-    <input id="firstname" name="firstname"  type="text" placeholder="John" required>
-    <label for="lastname">Last Name:</label>
-    <input id="firstname" name="lastname" type="text" placeholder="Smith" required>
-    </div>
-    <div>
-    <label for="male_gender">Male</label>
-    <input id="male_gender" type="radio" name="gender_choice" value="MALE">    
-    <label for="femele_gender">Female</label>
-    <input id="female_gender" type="radio" name="gender_choice" value="FEMALE">    
-    </div>
-</form>
+<body>
+    <h2>Register</h2>
+
+    <form action="">
+        <div>
+            <label for="firstname">Frist Name:</label>
+            <input id="firstname" name="firstname" type="text" placeholder="John" required>
+            <label for="lastname">Last Name:</label>
+            <input id="firstname" name="lastname" type="text" placeholder="Smith" required>
+        </div>
+        <div>
+            <label for="male_gender">Male</label>
+            <input id="male_gender" type="radio" name="gender_choice" value="MALE">
+            <label for="femele_gender">Female</label>
+            <input id="female_gender" type="radio" name="gender_choice" value="FEMALE">
+            <label for="other">Other</label>
+            <input id="other" type="radio" name="gender_choice" value="OTHER">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="your email" required>
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" placeholder="your password" pattern=".{5,10}" required>
+        </div>
+        <div>
+            <label for="#">Birthday</label>
+            <select id="birthday_month" name="month">
+                <option value="0" selected disabled>Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+            </select>
+            <select name="birthday_day" id="#">
+                <option value="0" selected disabled>Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <select name="birthday_year" id="#">
+                <option value="0" selected disabled>Year</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+            </select>
+            <div>
+                <label for="checkbox">I agree to the terms and conditions.</label>
+                <input id="checkbox" name="checkbox" type="checkbox" required>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </div>
+    </form>
 </body>
+
 </html>
